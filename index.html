@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Image Gallery</h1>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="architecture">
+          Architecture
+        </button>
+        <button class="filter-btn" data-filter="people">People</button>
+      </div>
+    </header>
+
+    <main class="gallery-grid">
+      <!-- Images will be dynamically loaded here -->
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+        <a class="prev-btn">&#10094;</a>
+        <a class="next-btn">&#10095;</a>
+        <div class="lightbox-controls">
+            <button id="fullscreen-btn" class="lightbox-control-btn">Fullscreen</button>
+            <div class="social-share-buttons">
+                <a id="share-twitter" class="social-share-btn" target="_blank">Twitter</a>
+                <a id="share-facebook" class="social-share-btn" target="_blank">Facebook</a>
+                <a id="share-pinterest" class="social-share-btn" target="_blank">Pinterest</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Image Gallery. All rights reserved.</p>
+    </footer>
+
+    <a id="scrollTopBtn" class="scroll-top-btn">&#8679;</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/plugins/bgset/ls.bgset.min.js" async=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
